@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4145D446E04198F363453444 /* Pods_AlvinAIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B47FD043576F01FEF28F6 /* Pods_AlvinAIUITests.framework */; };
+		5E183BB1E237401ACD435EA9 /* Pods_AlvinAITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB873FD320867D8F3393A2C /* Pods_AlvinAITests.framework */; };
+		D13551951E18A16F0046A8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13551941E18A16F0046A8EF /* AppDelegate.swift */; };
+		D13551971E18A16F0046A8EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13551961E18A16F0046A8EF /* ViewController.swift */; };
+		D135519A1E18A16F0046A8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13551981E18A16F0046A8EF /* Main.storyboard */; };
+		D135519D1E18A16F0046A8EF /* AlvinAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D135519B1E18A16F0046A8EF /* AlvinAI.xcdatamodeld */; };
+		D135519F1E18A16F0046A8EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D135519E1E18A16F0046A8EF /* Assets.xcassets */; };
+		D13551A21E18A16F0046A8EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13551A01E18A16F0046A8EF /* LaunchScreen.storyboard */; };
+		D13551AD1E18A16F0046A8EF /* AlvinAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13551AC1E18A16F0046A8EF /* AlvinAITests.swift */; };
+		D13551B81E18A16F0046A8EF /* AlvinAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13551B71E18A16F0046A8EF /* AlvinAIUITests.swift */; };
+		D14417D01E18B69F00CCDD26 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D14417CF1E18B69F00CCDD26 /* Artboard 2.png */; };
+		D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14417D11E19559800CCDD26 /* ConversationViewController.swift */; };
+		DA0F8EAE36F58E53A363C760 /* Pods_AlvinAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D13551A91E18A16F0046A8EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13551891E18A16F0046A8EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13551901E18A16F0046A8EF;
+			remoteInfo = AlvinAI;
+		};
+		D13551B41E18A16F0046A8EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13551891E18A16F0046A8EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13551901E18A16F0046A8EF;
+			remoteInfo = AlvinAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DB873FD320867D8F3393A2C /* Pods_AlvinAITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlvinAITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlvinAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3B47FD043576F01FEF28F6 /* Pods_AlvinAIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlvinAIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		310065581527EBC0C5F6E992 /* Pods-AlvinAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAI.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAI/Pods-AlvinAI.release.xcconfig"; sourceTree = "<group>"; };
+		82C4D13D0FB6DF64C5C4BC06 /* Pods-AlvinAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAITests/Pods-AlvinAITests.release.xcconfig"; sourceTree = "<group>"; };
+		92D0D1A608D5F8F80166F875 /* Pods-AlvinAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAI/Pods-AlvinAI.debug.xcconfig"; sourceTree = "<group>"; };
+		ADF28116BA02AEC472F6F03B /* Pods-AlvinAITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAITests/Pods-AlvinAITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D13551911E18A16F0046A8EF /* AlvinAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlvinAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13551941E18A16F0046A8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D13551961E18A16F0046A8EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D13551991E18A16F0046A8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D135519C1E18A16F0046A8EF /* AlvinAI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlvinAI.xcdatamodel; sourceTree = "<group>"; };
+		D135519E1E18A16F0046A8EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D13551A11E18A16F0046A8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D13551A31E18A16F0046A8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13551A81E18A16F0046A8EF /* AlvinAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlvinAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13551AC1E18A16F0046A8EF /* AlvinAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlvinAITests.swift; sourceTree = "<group>"; };
+		D13551AE1E18A16F0046A8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13551B31E18A16F0046A8EF /* AlvinAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlvinAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13551B71E18A16F0046A8EF /* AlvinAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlvinAIUITests.swift; sourceTree = "<group>"; };
+		D13551B91E18A16F0046A8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13551C51E18A5480046A8EF /* AlvinAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlvinAI-Bridging-Header.h"; sourceTree = "<group>"; };
+		D14417CF1E18B69F00CCDD26 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 2.png"; path = "Assets/Artboard 2.png"; sourceTree = SOURCE_ROOT; };
+		D14417D11E19559800CCDD26 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		D2E4F48EEF09E9E9272D837C /* Pods-AlvinAIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F44B9F47A87EB52EC970D7D9 /* Pods-AlvinAIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D135518E1E18A16F0046A8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0F8EAE36F58E53A363C760 /* Pods_AlvinAI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551A51E18A16F0046A8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E183BB1E237401ACD435EA9 /* Pods_AlvinAITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551B01E18A16F0046A8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4145D446E04198F363453444 /* Pods_AlvinAIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA7777825363FBF0C7CAC90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92D0D1A608D5F8F80166F875 /* Pods-AlvinAI.debug.xcconfig */,
+				310065581527EBC0C5F6E992 /* Pods-AlvinAI.release.xcconfig */,
+				ADF28116BA02AEC472F6F03B /* Pods-AlvinAITests.debug.xcconfig */,
+				82C4D13D0FB6DF64C5C4BC06 /* Pods-AlvinAITests.release.xcconfig */,
+				F44B9F47A87EB52EC970D7D9 /* Pods-AlvinAIUITests.debug.xcconfig */,
+				D2E4F48EEF09E9E9272D837C /* Pods-AlvinAIUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D13551881E18A16F0046A8EF = {
+			isa = PBXGroup;
+			children = (
+				D13551931E18A16F0046A8EF /* AlvinAI */,
+				D13551AB1E18A16F0046A8EF /* AlvinAITests */,
+				D13551B61E18A16F0046A8EF /* AlvinAIUITests */,
+				D13551921E18A16F0046A8EF /* Products */,
+				1CA7777825363FBF0C7CAC90 /* Pods */,
+				FADE3963341BF61F66580088 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D13551921E18A16F0046A8EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13551911E18A16F0046A8EF /* AlvinAI.app */,
+				D13551A81E18A16F0046A8EF /* AlvinAITests.xctest */,
+				D13551B31E18A16F0046A8EF /* AlvinAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D13551931E18A16F0046A8EF /* AlvinAI */ = {
+			isa = PBXGroup;
+			children = (
+				D14417CE1E18B69400CCDD26 /* Assets */,
+				D13551941E18A16F0046A8EF /* AppDelegate.swift */,
+				D13551961E18A16F0046A8EF /* ViewController.swift */,
+				D13551981E18A16F0046A8EF /* Main.storyboard */,
+				D135519E1E18A16F0046A8EF /* Assets.xcassets */,
+				D13551A01E18A16F0046A8EF /* LaunchScreen.storyboard */,
+				D13551A31E18A16F0046A8EF /* Info.plist */,
+				D135519B1E18A16F0046A8EF /* AlvinAI.xcdatamodeld */,
+				D13551C51E18A5480046A8EF /* AlvinAI-Bridging-Header.h */,
+				D14417D11E19559800CCDD26 /* ConversationViewController.swift */,
+			);
+			path = AlvinAI;
+			sourceTree = "<group>";
+		};
+		D13551AB1E18A16F0046A8EF /* AlvinAITests */ = {
+			isa = PBXGroup;
+			children = (
+				D13551AC1E18A16F0046A8EF /* AlvinAITests.swift */,
+				D13551AE1E18A16F0046A8EF /* Info.plist */,
+			);
+			path = AlvinAITests;
+			sourceTree = "<group>";
+		};
+		D13551B61E18A16F0046A8EF /* AlvinAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D13551B71E18A16F0046A8EF /* AlvinAIUITests.swift */,
+				D13551B91E18A16F0046A8EF /* Info.plist */,
+			);
+			path = AlvinAIUITests;
+			sourceTree = "<group>";
+		};
+		D14417CE1E18B69400CCDD26 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D14417CF1E18B69F00CCDD26 /* Artboard 2.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		FADE3963341BF61F66580088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */,
+				0DB873FD320867D8F3393A2C /* Pods_AlvinAITests.framework */,
+				1F3B47FD043576F01FEF28F6 /* Pods_AlvinAIUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13551901E18A16F0046A8EF /* AlvinAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13551BC1E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAI" */;
+			buildPhases = (
+				3DCADF8FFAAF48C9F0D9164F /* [CP] Check Pods Manifest.lock */,
+				D135518D1E18A16F0046A8EF /* Sources */,
+				D135518E1E18A16F0046A8EF /* Frameworks */,
+				D135518F1E18A16F0046A8EF /* Resources */,
+				14B0B6DC0AA661B289E55D29 /* [CP] Embed Pods Frameworks */,
+				94EF2CF805BA9E72A61786DB /* [CP] Copy Pods Resources */,
+				D13551C61E18A7E50046A8EF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlvinAI;
+			productName = AlvinAI;
+			productReference = D13551911E18A16F0046A8EF /* AlvinAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D13551A71E18A16F0046A8EF /* AlvinAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13551BF1E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAITests" */;
+			buildPhases = (
+				23A9514F375CFB4F51B73105 /* [CP] Check Pods Manifest.lock */,
+				D13551A41E18A16F0046A8EF /* Sources */,
+				D13551A51E18A16F0046A8EF /* Frameworks */,
+				D13551A61E18A16F0046A8EF /* Resources */,
+				83DBC48055047F3E16C2EB28 /* [CP] Embed Pods Frameworks */,
+				B9C3086239750B7D6DAB16B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D13551AA1E18A16F0046A8EF /* PBXTargetDependency */,
+			);
+			name = AlvinAITests;
+			productName = AlvinAITests;
+			productReference = D13551A81E18A16F0046A8EF /* AlvinAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D13551B21E18A16F0046A8EF /* AlvinAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13551C21E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAIUITests" */;
+			buildPhases = (
+				27AAF4E851C60718430332B4 /* [CP] Check Pods Manifest.lock */,
+				D13551AF1E18A16F0046A8EF /* Sources */,
+				D13551B01E18A16F0046A8EF /* Frameworks */,
+				D13551B11E18A16F0046A8EF /* Resources */,
+				CA7DF6669D8007B8EAF8C8E1 /* [CP] Embed Pods Frameworks */,
+				39B7DEDA886B2F6BCDAA918E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D13551B51E18A16F0046A8EF /* PBXTargetDependency */,
+			);
+			name = AlvinAIUITests;
+			productName = AlvinAIUITests;
+			productReference = D13551B31E18A16F0046A8EF /* AlvinAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13551891E18A16F0046A8EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Neegbeah Reeves";
+				TargetAttributes = {
+					D13551901E18A16F0046A8EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6WD86F9N5;
+						ProvisioningStyle = Automatic;
+					};
+					D13551A71E18A16F0046A8EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6WD86F9N5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D13551901E18A16F0046A8EF;
+					};
+					D13551B21E18A16F0046A8EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6WD86F9N5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D13551901E18A16F0046A8EF;
+					};
+				};
+			};
+			buildConfigurationList = D135518C1E18A16F0046A8EF /* Build configuration list for PBXProject "AlvinAI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D13551881E18A16F0046A8EF;
+			productRefGroup = D13551921E18A16F0046A8EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13551901E18A16F0046A8EF /* AlvinAI */,
+				D13551A71E18A16F0046A8EF /* AlvinAITests */,
+				D13551B21E18A16F0046A8EF /* AlvinAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D135518F1E18A16F0046A8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13551A21E18A16F0046A8EF /* LaunchScreen.storyboard in Resources */,
+				D135519F1E18A16F0046A8EF /* Assets.xcassets in Resources */,
+				D14417D01E18B69F00CCDD26 /* Artboard 2.png in Resources */,
+				D135519A1E18A16F0046A8EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551A61E18A16F0046A8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551B11E18A16F0046A8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B0B6DC0AA661B289E55D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAI/Pods-AlvinAI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23A9514F375CFB4F51B73105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27AAF4E851C60718430332B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39B7DEDA886B2F6BCDAA918E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DCADF8FFAAF48C9F0D9164F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83DBC48055047F3E16C2EB28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAITests/Pods-AlvinAITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94EF2CF805BA9E72A61786DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAI/Pods-AlvinAI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C3086239750B7D6DAB16B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAITests/Pods-AlvinAITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA7DF6669D8007B8EAF8C8E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D13551C61E18A7E50046A8EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8e03bf8519f7903a4e20ae17146a26bdb3d4774a fba0856ddf32bb0d729da59586194444a0b76228015168b2190abef98e9907b1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D135518D1E18A16F0046A8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13551971E18A16F0046A8EF /* ViewController.swift in Sources */,
+				D135519D1E18A16F0046A8EF /* AlvinAI.xcdatamodeld in Sources */,
+				D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */,
+				D13551951E18A16F0046A8EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551A41E18A16F0046A8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13551AD1E18A16F0046A8EF /* AlvinAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13551AF1E18A16F0046A8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13551B81E18A16F0046A8EF /* AlvinAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D13551AA1E18A16F0046A8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13551901E18A16F0046A8EF /* AlvinAI */;
+			targetProxy = D13551A91E18A16F0046A8EF /* PBXContainerItemProxy */;
+		};
+		D13551B51E18A16F0046A8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13551901E18A16F0046A8EF /* AlvinAI */;
+			targetProxy = D13551B41E18A16F0046A8EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D13551981E18A16F0046A8EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13551991E18A16F0046A8EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D13551A01E18A16F0046A8EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13551A11E18A16F0046A8EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D13551BA1E18A16F0046A8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13551BB1E18A16F0046A8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D13551BD1E18A16F0046A8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D0D1A608D5F8F80166F875 /* Pods-AlvinAI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D13551BE1E18A16F0046A8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310065581527EBC0C5F6E992 /* Pods-AlvinAI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D13551C01E18A16F0046A8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF28116BA02AEC472F6F03B /* Pods-AlvinAITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlvinAI.app/AlvinAI";
+			};
+			name = Debug;
+		};
+		D13551C11E18A16F0046A8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C4D13D0FB6DF64C5C4BC06 /* Pods-AlvinAITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlvinAI.app/AlvinAI";
+			};
+			name = Release;
+		};
+		D13551C31E18A16F0046A8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44B9F47A87EB52EC970D7D9 /* Pods-AlvinAIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AlvinAI;
+			};
+			name = Debug;
+		};
+		D13551C41E18A16F0046A8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E4F48EEF09E9E9272D837C /* Pods-AlvinAIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L6WD86F9N5;
+				INFOPLIST_FILE = AlvinAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlvinAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AlvinAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D135518C1E18A16F0046A8EF /* Build configuration list for PBXProject "AlvinAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13551BA1E18A16F0046A8EF /* Debug */,
+				D13551BB1E18A16F0046A8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13551BC1E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13551BD1E18A16F0046A8EF /* Debug */,
+				D13551BE1E18A16F0046A8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13551BF1E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13551C01E18A16F0046A8EF /* Debug */,
+				D13551C11E18A16F0046A8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13551C21E18A16F0046A8EF /* Build configuration list for PBXNativeTarget "AlvinAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13551C31E18A16F0046A8EF /* Debug */,
+				D13551C41E18A16F0046A8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D135519B1E18A16F0046A8EF /* AlvinAI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D135519C1E18A16F0046A8EF /* AlvinAI.xcdatamodel */,
+			);
+			currentVersion = D135519C1E18A16F0046A8EF /* AlvinAI.xcdatamodel */;
+			path = AlvinAI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D13551891E18A16F0046A8EF /* Project object */;
+}

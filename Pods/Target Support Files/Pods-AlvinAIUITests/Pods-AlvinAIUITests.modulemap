@@ -1,0 +1,6 @@
+framework module Pods_AlvinAIUITests {
+  umbrella header "Pods-AlvinAIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
