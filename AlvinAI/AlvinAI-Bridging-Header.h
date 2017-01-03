@@ -12,3 +12,6 @@
 #import <ApiAI/AIVoiceRequestButton.h>
 
 #import <MBProgressHUD/MBProgressHUD.h>
+
+#import <Syncano.h>
+

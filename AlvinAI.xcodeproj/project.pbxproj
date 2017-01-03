@@ -19,6 +19,7 @@
 		D13551B81E18A16F0046A8EF /* AlvinAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13551B71E18A16F0046A8EF /* AlvinAIUITests.swift */; };
 		D14417D01E18B69F00CCDD26 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D14417CF1E18B69F00CCDD26 /* Artboard 2.png */; };
 		D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14417D11E19559800CCDD26 /* ConversationViewController.swift */; };
+		D14417D51E1C16DD00CCDD26 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14417D41E1C16DD00CCDD26 /* Conversation.swift */; };
 		DA0F8EAE36F58E53A363C760 /* Pods_AlvinAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		D13551C51E18A5480046A8EF /* AlvinAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlvinAI-Bridging-Header.h"; sourceTree = "<group>"; };
 		D14417CF1E18B69F00CCDD26 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 2.png"; path = "Assets/Artboard 2.png"; sourceTree = SOURCE_ROOT; };
 		D14417D11E19559800CCDD26 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		D14417D41E1C16DD00CCDD26 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		D2E4F48EEF09E9E9272D837C /* Pods-AlvinAIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F44B9F47A87EB52EC970D7D9 /* Pods-AlvinAIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 		D13551931E18A16F0046A8EF /* AlvinAI */ = {
 			isa = PBXGroup;
 			children = (
+				D14417D31E1C16AE00CCDD26 /* Text Summon */,
 				D14417CE1E18B69400CCDD26 /* Assets */,
 				D13551941E18A16F0046A8EF /* AppDelegate.swift */,
 				D13551961E18A16F0046A8EF /* ViewController.swift */,
@@ -143,7 +146,6 @@
 				D13551A31E18A16F0046A8EF /* Info.plist */,
 				D135519B1E18A16F0046A8EF /* AlvinAI.xcdatamodeld */,
 				D13551C51E18A5480046A8EF /* AlvinAI-Bridging-Header.h */,
-				D14417D11E19559800CCDD26 /* ConversationViewController.swift */,
 			);
 			path = AlvinAI;
 			sourceTree = "<group>";
@@ -172,6 +174,15 @@
 				D14417CF1E18B69F00CCDD26 /* Artboard 2.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		D14417D31E1C16AE00CCDD26 /* Text Summon */ = {
+			isa = PBXGroup;
+			children = (
+				D14417D11E19559800CCDD26 /* ConversationViewController.swift */,
+				D14417D41E1C16DD00CCDD26 /* Conversation.swift */,
+			);
+			name = "Text Summon";
 			sourceTree = "<group>";
 		};
 		FADE3963341BF61F66580088 /* Frameworks */ = {
@@ -486,6 +497,7 @@
 				D13551971E18A16F0046A8EF /* ViewController.swift in Sources */,
 				D135519D1E18A16F0046A8EF /* AlvinAI.xcdatamodeld in Sources */,
 				D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */,
+				D14417D51E1C16DD00CCDD26 /* Conversation.swift in Sources */,
 				D13551951E18A16F0046A8EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92D0D1A608D5F8F80166F875 /* Pods-AlvinAI.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6WD86F9N5;
 				INFOPLIST_FILE = AlvinAI/Info.plist;
@@ -653,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 310065581527EBC0C5F6E992 /* Pods-AlvinAI.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6WD86F9N5;
 				INFOPLIST_FILE = AlvinAI/Info.plist;

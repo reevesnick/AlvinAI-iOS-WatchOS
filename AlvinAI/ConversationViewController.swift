@@ -7,19 +7,57 @@
 //
 
 import UIKit
+import JSQMessagesViewController
 
 class ConversationViewController: JSQMessagesViewController {
+    
+    var messages = [JSQMessage]()
+    let defaults = UserDefaults.standard
+    let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImage(with: UIColor(red: 10/255, green: 180/255, blue: 230/255, alpha: 1.0))
+    let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: UIColor.lightGray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.senderId = "1"
+        self.senderDisplayName = "Neegbeah"
+        
+       
+      
+        // This is a beta feature that mostly works but to make things more stable it is diabled.
+        collectionView?.collectionViewLayout.springinessEnabled = false
+        
+        automaticallyScrollsToMostRecentMessage = true
+        
+        self.collectionView?.reloadData()
+        self.collectionView?.layoutIfNeeded()
+    }
+    
+    override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+        print("didPressSendButton")
+        print("\(text)")
+        print(senderId)
+        print(senderDisplayName)
+        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
+        print(messages)
     }
 
+    override func didPressAccessoryButton(_ sender: UIButton!) {
+        print("didPressAccessoryButton")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Use it to reload messages, so that we can hide implementation of reloading from other places in our code.
+    func reloadMessagesView() {
+        self.collectionView?.reloadData()
+    }
+    
+    
     
 
     /*
@@ -32,4 +70,6 @@ class ConversationViewController: JSQMessagesViewController {
     }
     */
 
+
 }
+

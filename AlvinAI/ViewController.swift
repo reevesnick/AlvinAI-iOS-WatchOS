@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //self.view.backgroundColor = UIColor(gradientStyle:UIGradientStyleTopToBottom, withFrame:CGRect, andColors:[UIColor])
+        /*
+        self.view.backgroundColor = GradientColor(UIGradientStyle.topToBottom, frame: CGRectMake(0, 0, 1000,1000), colors: UIColor.hexString:"511512")
 
+*/
         
     }
 

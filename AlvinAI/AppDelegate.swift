@@ -13,6 +13,9 @@ import ChameleonFramework
 import Fabric
 import Crashlytics
 import AVFoundation
+import syncano_ios
+
+
 
 
 @UIApplicationMain
@@ -23,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    @objc func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // Fabric SDK
