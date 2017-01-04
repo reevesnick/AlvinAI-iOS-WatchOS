@@ -40,13 +40,43 @@ class ConversationViewController: JSQMessagesViewController {
         print(senderId)
         print(senderDisplayName)
         messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
+        collectionView.reloadData()
         print(messages)
     }
+    
 
     override func didPressAccessoryButton(_ sender: UIButton!) {
         print("didPressAccessoryButton")
     }
     
+    
+    // Message Data
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
+        return messages[indexPath.item]
+    }
+    
+    // Outgoing Image Bubble
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
+        let bubbleFactory = JSQMessagesBubbleImageFactory()
+        return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.flatBlueDark)
+    }
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource! {
+        return nil
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("number of items:\(messages.count)")
+        return messages.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView,  cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
+        return cell
+    }
+
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
