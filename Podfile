@@ -12,7 +12,6 @@ target 'AlvinAI' do
   pod 'MBProgressHUD'
   pod 'ApiAI'
   pod 'JSQMessagesViewController'
-  pod 'syncano-ios' #Just for testing JSQMessagesViewController
 
 
 

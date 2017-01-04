@@ -84,26 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ApiAI/ApiAI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDBMigrationManager/FMDBMigrationManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JSQMessagesViewController/JSQMessagesViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/syncano-ios/syncano_ios.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ApiAI/ApiAI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDBMigrationManager/FMDBMigrationManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JSQMessagesViewController/JSQMessagesViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/syncano-ios/syncano_ios.framework"
 fi
