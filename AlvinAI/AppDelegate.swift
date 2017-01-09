@@ -13,7 +13,6 @@ import ChameleonFramework
 import Fabric
 import Crashlytics
 import AVFoundation
-import syncano_ios
 
 
 

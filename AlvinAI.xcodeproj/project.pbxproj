@@ -20,6 +20,9 @@
 		D14417D01E18B69F00CCDD26 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D14417CF1E18B69F00CCDD26 /* Artboard 2.png */; };
 		D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14417D11E19559800CCDD26 /* ConversationViewController.swift */; };
 		D14417D51E1C16DD00CCDD26 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14417D41E1C16DD00CCDD26 /* Conversation.swift */; };
+		D15349F61E23CADB0061889D /* mic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D15349F51E23CADB0061889D /* mic-icon.png */; };
+		D15349F81E23CB230061889D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15349F71E23CB230061889D /* AVFoundation.framework */; };
+		D15349FA1E23CB410061889D /* VoiceSummonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15349F91E23CB410061889D /* VoiceSummonViewController.swift */; };
 		DA0F8EAE36F58E53A363C760 /* Pods_AlvinAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		D14417CF1E18B69F00CCDD26 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 2.png"; path = "Assets/Artboard 2.png"; sourceTree = SOURCE_ROOT; };
 		D14417D11E19559800CCDD26 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		D14417D41E1C16DD00CCDD26 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		D15349F51E23CADB0061889D /* mic-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mic-icon.png"; path = "Assets/mic-icon.png"; sourceTree = SOURCE_ROOT; };
+		D15349F71E23CB230061889D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D15349F91E23CB410061889D /* VoiceSummonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceSummonViewController.swift; sourceTree = "<group>"; };
 		D2E4F48EEF09E9E9272D837C /* Pods-AlvinAIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F44B9F47A87EB52EC970D7D9 /* Pods-AlvinAIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlvinAIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlvinAIUITests/Pods-AlvinAIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15349F81E23CB230061889D /* AVFoundation.framework in Frameworks */,
 				DA0F8EAE36F58E53A363C760 /* Pods_AlvinAI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 		D13551931E18A16F0046A8EF /* AlvinAI */ = {
 			isa = PBXGroup;
 			children = (
+				D15349F41E1E998F0061889D /* Voice Summon */,
 				D14417D31E1C16AE00CCDD26 /* Text Summon */,
 				D14417CE1E18B69400CCDD26 /* Assets */,
 				D13551941E18A16F0046A8EF /* AppDelegate.swift */,
@@ -171,6 +179,7 @@
 		D14417CE1E18B69400CCDD26 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D15349F51E23CADB0061889D /* mic-icon.png */,
 				D14417CF1E18B69F00CCDD26 /* Artboard 2.png */,
 			);
 			name = Assets;
@@ -185,9 +194,18 @@
 			name = "Text Summon";
 			sourceTree = "<group>";
 		};
+		D15349F41E1E998F0061889D /* Voice Summon */ = {
+			isa = PBXGroup;
+			children = (
+				D15349F91E23CB410061889D /* VoiceSummonViewController.swift */,
+			);
+			name = "Voice Summon";
+			sourceTree = "<group>";
+		};
 		FADE3963341BF61F66580088 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D15349F71E23CB230061889D /* AVFoundation.framework */,
 				1473032262910E236FA5DAE5 /* Pods_AlvinAI.framework */,
 				0DB873FD320867D8F3393A2C /* Pods_AlvinAITests.framework */,
 				1F3B47FD043576F01FEF28F6 /* Pods_AlvinAIUITests.framework */,
@@ -318,6 +336,7 @@
 				D13551A21E18A16F0046A8EF /* LaunchScreen.storyboard in Resources */,
 				D135519F1E18A16F0046A8EF /* Assets.xcassets in Resources */,
 				D14417D01E18B69F00CCDD26 /* Artboard 2.png in Resources */,
+				D15349F61E23CADB0061889D /* mic-icon.png in Resources */,
 				D135519A1E18A16F0046A8EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15349FA1E23CB410061889D /* VoiceSummonViewController.swift in Sources */,
 				D13551971E18A16F0046A8EF /* ViewController.swift in Sources */,
 				D135519D1E18A16F0046A8EF /* AlvinAI.xcdatamodeld in Sources */,
 				D14417D21E19559800CCDD26 /* ConversationViewController.swift in Sources */,
