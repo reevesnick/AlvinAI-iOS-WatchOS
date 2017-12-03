@@ -38,15 +38,17 @@ class VoiceSummonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         // Do any additional setup after loading the view, typically from a nib.
         let colors:[UIColor] = [
             HexColor("EE6C00")!,UIColor.flatWhite]
         view.backgroundColor = UIColor(hexString:"EE6C00")
         
-        let defaultUtterance = AVSpeechUtterance(string: "Alvin Here. What do you got?")
+        
+        
+        
+        
+        let defaultUtterance = AVSpeechUtterance(string: "Alvin Here! What do you got?")
         defaultUtterance.rate = 0.5
         synth.speak(defaultUtterance)
 
@@ -57,16 +59,70 @@ class VoiceSummonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func permissionCheckMicrophone(){
+//
+//        private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"))
+//
+//        speechRecognizer.delegate = self  //3
+//
+//        SFSpeechRecognizer.requestAuthorization { (authStatus) in  //4
+//
+//            var isButtonEnabled = false
+//
+//            switch authStatus {  //5
+//            case .authorized:
+//                isButtonEnabled = true
+//
+//            case .denied:
+//                isButtonEnabled = false
+//                print("User denied access to speech recognition")
+//
+//            case .restricted:
+//                isButtonEnabled = false
+//                print("Speech recognition restricted on this device")
+//
+//            case .notDetermined:
+//                isButtonEnabled = false
+//                print("Speech recognition not yet authorized")
+//            }
+//
+//            OperationQueue.main.addOperation() {
+//                self.microphoneButton.isEnabled = isButtonEnabled
+//            }
+//        }
+    }
+    
     //Device speak
     func speak(text: String) {
         let speechUtterance = AVSpeechUtterance(string: text)
         synth.speak(speechUtterance)
     }
+    
+    func dictateText(text: String){
+        
+    }
 
+    func getResponseAPIParameters(){
+        
+        let request = ApiAI.shared().textRequest()
+
+        request?.setMappedCompletionBlockSuccess({ (request, response) in
+            let response = response as! AIResponse
+
+        }, failure: { (request, error) in
+            // TODO: handle error
+        })
+    }
+    
+    func speechToTextRequest(){
+        
+    }
     
     
     @IBAction func micButtonAction(sender: AnyObject){
         NSLog("Mic Button Pressed");
+        
+        // Check if dictation has responded otherwise fall back to break
         
         let request = ApiAI.shared().textRequest()
 
@@ -74,7 +130,7 @@ class VoiceSummonViewController: UIViewController {
         request?.setCompletionBlockSuccess({[unowned self]( request, response) -> Void in
             
             // Handle success ...
-            self.responseLabel.text = "Success Response Recievd"
+            self.responseLabel.text = ""
             self.speak(text: "Success Response Recievd")
             
             },failure: {(request,error) -> Void in
