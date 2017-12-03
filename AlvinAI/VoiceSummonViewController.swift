@@ -8,10 +8,30 @@
 
 import UIKit
 import AVFoundation
+import ChameleonFramework
+import ApiAI
+
+extension UIColor {
+    
+    convenience init(hex: Int) {
+        let components = (
+            R: CGFloat((hex >> 16) & 0xff) / 255,
+            G: CGFloat((hex >> 08) & 0xff) / 255,
+            B: CGFloat((hex >> 00) & 0xff) / 255
+        )
+        self.init(red: components.R, green: components.G, blue: components.B, alpha: 1)
+    }
+    
+}
 
 class VoiceSummonViewController: UIViewController {
     
-    @IBOutlet weak var textView: UITextView!
+//    let speechtoTextVar: UILabel!
+    
+    @IBOutlet weak var textView: UILabel!
+    
+    @IBOutlet weak var requestLabel: UILabel!
+    @IBOutlet weak var responseLabel: UILabel!
     
     let synth = AVSpeechSynthesizer()
     var myUtterance = AVSpeechUtterance(string: "")
@@ -20,6 +40,16 @@ class VoiceSummonViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        let colors:[UIColor] = [
+            HexColor("EE6C00")!,UIColor.flatWhite]
+        view.backgroundColor = UIColor(hexString:"EE6C00")
+        
+        let defaultUtterance = AVSpeechUtterance(string: "Alvin Here. What do you got?")
+        defaultUtterance.rate = 0.5
+        synth.speak(defaultUtterance)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,12 +57,36 @@ class VoiceSummonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func textToSpeech(sender: AnyObject){
-        myUtterance = AVSpeechUtterance(string: (textView?.text)!)
-        myUtterance.rate = 0.3
-        synth.speak(myUtterance)
+    //Device speak
+    func speak(text: String) {
+        let speechUtterance = AVSpeechUtterance(string: text)
+        synth.speak(speechUtterance)
     }
 
+    
+    
+    @IBAction func micButtonAction(sender: AnyObject){
+        NSLog("Mic Button Pressed");
+        
+        let request = ApiAI.shared().textRequest()
+
+        request?.query = ["Who are you"]
+        request?.setCompletionBlockSuccess({[unowned self]( request, response) -> Void in
+            
+            // Handle success ...
+            self.responseLabel.text = "Success Response Recievd"
+            self.speak(text: "Success Response Recievd")
+            
+            },failure: {(request,error) -> Void in
+            // Handle error ...
+                self.responseLabel.text = "Hmmm? I'm not hearing you. Can you please try again in another time"
+                self.speak(text: "Hmmm? I'm not hearing you. Can you please try again in another time")
+                } )
+
+        ApiAI.shared().enqueue(request)
+
+        
+    }
     /*
     // MARK: - Navigation
 

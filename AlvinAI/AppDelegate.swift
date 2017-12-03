@@ -21,7 +21,7 @@ import AVFoundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    var apiAI: ApiAI?
 
 
 
@@ -40,15 +40,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // same error
         }
         
-        let apiai = ApiAI.shared()
-        
         let configuration: AIConfiguration = AIDefaultConfiguration()
-        
         configuration.clientAccessToken = "9a3529894de2467eb39fe757d119fb7c"
-        
+        let apiai = ApiAI.shared()
         apiai?.configuration = configuration
 
-        
         return true
     }
 

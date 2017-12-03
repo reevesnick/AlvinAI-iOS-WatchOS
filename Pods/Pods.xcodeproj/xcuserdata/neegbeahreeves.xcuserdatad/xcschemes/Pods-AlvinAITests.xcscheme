@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A258E92264EB1C79297A233347FE97B6"
+               BlueprintIdentifier = "51B4BCD41466470401F7F0B9855629EA"
                BuildableName = "Pods_AlvinAITests.framework"
                BlueprintName = "Pods-AlvinAITests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A258E92264EB1C79297A233347FE97B6"
+            BlueprintIdentifier = "51B4BCD41466470401F7F0B9855629EA"
             BuildableName = "Pods_AlvinAITests.framework"
             BlueprintName = "Pods-AlvinAITests"
             ReferencedContainer = "container:Pods.xcodeproj">

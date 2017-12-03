@@ -7,9 +7,15 @@
 //
 
 import XCTest
+import ApiAI
+
 @testable import AlvinAI
 
+
 class AlvinAITests: XCTestCase {
+    
+    let apiAi: ApiAI! = nil
+
     
     override func setUp() {
         super.setUp()
@@ -31,6 +37,25 @@ class AlvinAITests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAPIResult(){
+
+        let request = apiAi.textRequest()
+        
+        request?.query = ["Who Are You"]
+        
+    
+        apiAi.enqueue(request)
+
+    }
+    
+    func testAPIVoiceResult(){
+
+        let request = apiAi.voiceRequest()
+   
+        apiAi.enqueue(request)
+
     }
     
 }

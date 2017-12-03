@@ -19,6 +19,7 @@ target 'AlvinAI' do
   target 'AlvinAITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'ApiAI'
   end
 
   target 'AlvinAIUITests' do

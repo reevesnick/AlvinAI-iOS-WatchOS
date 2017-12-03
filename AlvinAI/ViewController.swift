@@ -9,18 +9,6 @@
 import UIKit
 import ChameleonFramework
 
-extension UIColor {
-    
-    convenience init(hex: Int) {
-        let components = (
-            R: CGFloat((hex >> 16) & 0xff) / 255,
-            G: CGFloat((hex >> 08) & 0xff) / 255,
-            B: CGFloat((hex >> 00) & 0xff) / 255
-        )
-        self.init(red: components.R, green: components.G, blue: components.B, alpha: 1)
-    }
-    
-}
 
 class ViewController: UIViewController {
 
@@ -28,8 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let colors:[UIColor] = [
-            HexColor("78d0e9")!,UIColor.flatWhite]
-        view.backgroundColor = GradientColor(.topToBottom, frame: view.frame, colors: colors)
+            HexColor("EE6C00")!,UIColor.flatWhite]
+        view.backgroundColor = UIColor(hexString:"EE6C00")
 
 
 
